@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ClearSchTasks")]
-[assembly: AssemblyDescription("A simple utility which checks and clears with the provided PID and path.")]
+[assembly: AssemblyDescription("Utility which checks and clears with the provided PID and path.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Symphony Communication Services, LLC")]
 [assembly: AssemblyProduct("ClearSchTasks")]
