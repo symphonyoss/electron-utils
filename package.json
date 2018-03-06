@@ -1,0 +1,21 @@
+{
+  "name": "electron-utils",
+  "version": "1.0.0",
+  "description": "A simple utility for SymphonyElectron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npm run build",
+    "build": "MSBuild.exe ElectronUtils.sln /t:rebuild /p:Configuration=Release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symphonyoss/electron-utils.git"
+  },
+  "author": "Keerthi Niranjan <keerthiniranjan16@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/symphonyoss/electron-utils/issues"
+  },
+  "homepage": "https://github.com/symphonyoss/electron-utils#readme"
+}
