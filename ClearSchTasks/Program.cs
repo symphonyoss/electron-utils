@@ -22,15 +22,17 @@ namespace ClearSchTasks
             }
             catch (Exception e)
             {
-                try
+                if (Directory.Exists(path))
                 {
-                    Directory.Delete(path, true);
+                    try
+                    {
+                        Directory.Delete(path, true);
+                    }
+                    catch (Exception err)
+                    {
+                        Console.WriteLine("Clearing process failed: {0}", err.Message);
+                    }
                 }
-                catch (Exception err)
-                {
-                    Console.WriteLine("Clearing process failed: {0}", err.Message);
-                }
-
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                 startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
