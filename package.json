@@ -2,7 +2,6 @@
   "name": "electron-utils",
   "version": "1.0.3",
   "description": "A simple utility for SymphonyElectron",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npm run build",
@@ -17,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/symphonyoss/electron-utils/issues"
   },
-  "homepage": "https://github.com/symphonyoss/electron-utils#readme"
+  "homepage": "https://github.com/symphonyoss/electron-utils#readme",
+  "os": "win32"
 }
