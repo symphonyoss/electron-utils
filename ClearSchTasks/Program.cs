@@ -37,7 +37,7 @@ namespace ClearSchTasks
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                 startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
                 startInfo.FileName = "cmd.exe";
-                string cmdArg = "/C schtasks /delete /tn '{0}' /f";
+                string cmdArg = @"/C schtasks /delete /tn ""{0}"" /f";
                 string formattedCmd = string.Format(cmdArg, schTaskName);
                 startInfo.Arguments = formattedCmd;
                 process.StartInfo = startInfo;
