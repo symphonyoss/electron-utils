@@ -1,6 +1,6 @@
 {
   "name": "electron-utils",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A simple utility for SymphonyElectron",
   "main": "index.js",
   "scripts": {
