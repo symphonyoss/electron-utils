@@ -12,13 +12,16 @@ namespace ClearOnBoot
         {
             string path = args[0];
 
-            try
+            if (Directory.Exists(path))
             {
-                Directory.Delete(path, true);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Clearing process failed: {0}", e.Message);
+                try
+                {
+                    Directory.Delete(path, true);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Clearing process failed: {0}", e.Message);
+                }
             }
         }
     }
